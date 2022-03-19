@@ -1,0 +1,157 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/*
+    2. Remove default margin, padding
+  */
+* {
+    margin: 0;
+    padding: 0;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+    height: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+/*
+    8. Avoid text overflows
+  */
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+    font-size: 2rem;
+}
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --color-blue: #6dc9e7;
+    --color-yellow: #f8d22c;
+    --color-gray: #2e3133;
+    --color-white: #ffffff;
+    --color-inactive: #929395;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-gray);
+    padding: 3rem;
+    padding-top: 5rem;
+    padding-right: 5rem;
+    height: 100vh;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 1rem;
+}
+nav ul li a {
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+a.active {
+    color: var(--color-white);
+}
+
+a.inactive {
+    color: var(--color-inactive);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--color-blue);
+}
+
+main .top {
+    flex-grow: 1;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .bottom {
+    width: 100%;
+    height: 10rem;
+    background-color: var(--color-yellow);
+}
+
+main h2,
+main p {
+    color: var(--color-white);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+h2.heading {
+    font-size: 3.5rem;
+    font-weight: 600;
+}

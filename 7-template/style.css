@@ -74,3 +74,62 @@ h6 {
 
 html {
   font-size: 62.5%; }
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #bde5ef;
+  overflow: auto;
+  display: flex;
+  flex-direction: column; }
+  body header {
+    width: inherit;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+    padding-bottom: 0; }
+    body header .banner {
+      height: inherit;
+      width: inherit;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem;
+      background-color: #ff6067; }
+      body header .banner__title, body header .banner__subtitle {
+        color: white;
+        font-weight: 600; }
+      body header .banner__title {
+        font-size: 1.8rem; }
+      body header .banner__subtitle {
+        font-style: italic;
+        font-size: 1rem; }
+    body header .nav {
+      width: inherit; }
+      body header .nav__menu {
+        display: flex;
+        justify-content: center;
+        background-color: #f9ef1c;
+        flex-wrap: wrap; }
+        body header .nav__menu__item {
+          list-style-type: none;
+          margin: 10px;
+          color: #2f5b69;
+          text-transform: uppercase;
+          font-size: 1.2rem;
+          font-weight: 500; }
+  body main.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    width: 80%;
+    margin-top: 20rem;
+    padding: 2rem; }
+    body main.container h2 {
+      color: #2f5b69;
+      font-size: 1.8rem;
+      font-weight: 600; }
